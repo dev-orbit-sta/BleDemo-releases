@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "plugins": [
+    {
+      "id": "protocol-basic",
+      "type": "basic",
+      "displayName": "55AA 基础协议",
+      "version": "1.0.0003",
+      "url": "plugins/protocol-basic-1.0.0003.zip",
+      "entryClass": "com.example.protocol.basic.v10.BasicPlugin",
+      "required": true,
+      "sha256": "4f71393efd26e50fd3ee635cb44d71b3322112ea0944e6379df5cba077cef928",
+      "history": []
+    },
+    {
+      "id": "protocol-fc01",
+      "type": "function",
+      "displayName": "固件参数",
+      "version": "1.0.0001",
+      "url": "plugins/protocol-fc01-1.0.0001.zip",
+      "entryClass": "com.example.protocol.fc01.v10.Fc01Plugin",
+      "required": false,
+      "sha256": "659d4256f5ce12911de646919f396ab0e21247a7fa96fe3fcc83004b126f5783",
+      "history": [],
+      "functionCode": 1,
+      "operationType": "readwrite"
+    }
+  ]
+}
