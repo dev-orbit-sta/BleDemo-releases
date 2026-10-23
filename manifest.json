@@ -1,26 +1,58 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
+  "products": [
+    {
+      "id": "indicator-transient",
+      "category": "indicator",
+      "displayName": "暂态特征型指示器",
+      "batches": [
+        "A"
+      ]
+    }
+  ],
   "plugins": [
     {
       "id": "protocol-basic",
       "type": "basic",
+      "product": null,
+      "batch": null,
+      "isCommon": false,
       "displayName": "55AA 基础协议",
-      "version": "1.0.0003",
-      "url": "plugins/protocol-basic-1.0.0003.zip",
+      "version": "1.0.0004",
+      "url": "plugins/protocol-basic-1.0.0004.zip",
       "entryClass": "com.example.protocol.basic.v10.BasicPlugin",
       "required": true,
-      "sha256": "1b72046f559ca71d2cc1b0d60f1d4c08f472691c85bfbb6c9574ceb9aab39561",
+      "sha256": "68c7c4c9501ce1e565bed7c0cec448d73d1866970577da1fb848f405158b9da1",
       "history": []
     },
     {
       "id": "protocol-fc01",
       "type": "function",
-      "displayName": "固件参数",
+      "product": null,
+      "batch": null,
+      "isCommon": false,
+      "displayName": "protocol-fc01",
       "version": "1.0.0002",
       "url": "plugins/protocol-fc01-1.0.0002.zip",
-      "entryClass": "com.example.protocol.fc01.v10.Fc01Plugin",
+      "entryClass": "",
       "required": false,
       "sha256": "3d2e64eb126916e13e6aa1aebe7741040622edeaa3e7609a2f4f2c4caf408aa0",
+      "history": [],
+      "functionCode": null,
+      "operationType": "unknown"
+    },
+    {
+      "id": "protocol-fc01-indicator-transient-A",
+      "type": "function",
+      "product": "indicator-transient",
+      "batch": "A",
+      "isCommon": false,
+      "displayName": "固件参数",
+      "version": "1.0.0001",
+      "url": "plugins/protocol-fc01-indicator-transient-A-1.0.0001.zip",
+      "entryClass": "com.example.protocol.fc01.ita.a.v10.Fc01Plugin",
+      "required": false,
+      "sha256": "5e68248040161b6e9793291674148f1106acbd2d2df1bb65b38c809c3e419adf",
       "history": [],
       "functionCode": 1,
       "operationType": "readwrite"
